@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rocktem's Personal Website</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Fira+Sans+Condensed&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+  </head>
+  <body onload="changeAccent()">
+    <div>
+      <img class="banner" src="images/Website_Header.png">
+      <ul class="navbar">
+        <li class="navbar"><a class="navbar" href="contact.html">Contact Me</a></li>
+        <li class="navbar"><a class="navbar" id="active" href="videos.html">Videos</a></li>
+        <li class="navbar"><a class="navbar" href="portfolio.html">Portfolio</a></li>
+        <li class="navbar"><a class="navbar" href="goals.html">My Goals</a></li>
+        <li class="navbar"><a class="navbar" href="index.html">Who am I</a></li>
+      </ul>
+      <img class="banner" src="images/Navbar_Under.png">
+    </div>
+
+    <div class="fade">
+    <h1>Videos</h1>
+    <div id="underline"></div>
+
+    <button type="button" name="personaVids" onclick="personalVids()">Personal Videos</button>
+    <button type="button" name="favoriteVids" onclick="favoriteVids()">Favorite Videos</button>
+    <button type="button" name="music" onclick="jumpToMusic()">Music</button>
+
+    <p id="videomsg">
+      Here are a couple of videos and songs that I enjoy in case you want to get a better
+      understanding of me.
+    </p>
+
+    <div id="personal-vids">
+      <div class="responsive">
+        <div class="gallery">
+          <video src="videos/RocktemVsDon.mp4" controls width="600" height="400">
+          </video>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <video src="videos/Toast.mp4" controls width="600" height="400">
+          </video>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <video src="videos/JP.mp4" controls width="600" height="400">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div id="favorite-vids">
+      <div class="responsive">
+        <div class="gallery">
+          <iframe src="https://www.youtube.com/embed/XjIZ1IGEJNo" width="600" height="400"></iframe>
+          <span>This is just one of my favorite memes to look back on</span>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <iframe src="https://www.youtube.com/embed/3Ky9MZyL8r4" width="600" height="400"></iframe>
+          <span>
+            This helped solidify my knowledge of java before I took the AP test.
+          </span>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <iframe src="https://www.youtube.com/embed/8zxeGydXY98" width="600" height="400"></iframe>
+          <span>Critical Role is what got me into D&D and I feel like this oneshot exemplifies the fun one can have playing it</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="music">
+      <p>
+        Understanding copyright laws, I can't quite share my favorite songs. Though amongst instrumentals, I
+        find myself more keen to the sound of violin and piano. I enjoy the relationship between
+        Amadeus and Salieri, so here is a few songs from Mozart that I find nice.
+      </p>
+
+      <div class="responsive_audio">
+        <div class="gallery">
+          <audio src="audio\Fantasia+in+C+minor,+K.+475.mp3" controls></audio>
+          <span>Fantasia in C Minor K.475</span>
+        </div>
+      </div>
+
+      <div class="responsive_audio">
+        <div class="gallery">
+          <audio src="audio\Violin+Concerto+no.+1+in+B+flat+major,+K.+207+-+II.+Adagio.mp3" controls></audio>
+          <span>Violin Concerto no.1 in B flat major, K.207 - II.Adagio</span>
+        </div>
+      </div>
+
+      <div class="responsive_audio">
+        <div class="gallery">
+          <audio src="audio\Violin+Concerto+no.+2+in+D+major,+K.+211+-+II.+Andante.mp3" controls></audio>
+          <span>Violin Concerto no.2 in D major, K.211 - II.Andante</span>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <img src="images/Bottom_Banner_Upper.png" class="banner" id="bottom-banner-img">
+    <div id="bottom-banner">
+      <span id="copyright">© 2019 by Rocktem Bhowmik</span>
+    </div>
+  </body>
+</html>

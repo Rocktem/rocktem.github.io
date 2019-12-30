@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rocktem's Personal Website</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Fira+Sans+Condensed&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+  </head>
+  <body onload="changeAccent()">
+    <div>
+      <img class="banner" src="images/Website_Header.png">
+      <ul class="navbar">
+        <li class="navbar"><a class="navbar" id="active" href="contact.html">Contact Me</a></li>
+        <li class="navbar"><a class="navbar" href="videos.html">Videos</a></li>
+        <li class="navbar"><a class="navbar" href="portfolio.html">Portfolio</a></li>
+        <li class="navbar"><a class="navbar" href="goals.html">My Goals</a></li>
+        <li class="navbar"><a class="navbar" href="index.html">Who am I</a></li>
+      </ul>
+      <img class="banner" src="images/Navbar_Under.png">
+    </div>
+
+    <div class="fade">
+    <h1>Contact Me</h1>
+    <div id="underline"></div>
+    </div>
+
+    <div class="formcontainer">
+      <form class="contactmeform" action="contact.html" method="post">
+        <div class="row">
+          <div class="col1">
+            <label for="name">Full Name:</label>
+          </div>
+          <div class="col2">
+            <input type="text" name="name" placeholder="Full Name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="email">E-mail:</label>
+          </div>
+          <div class="col2">
+            <input type="text" name="email" placeholder="E-mail">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="subject">Subject:</label>
+          </div>
+          <div class="col2">
+            <input type="text" name="subject" placeholder="Subject">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="msg">Message:</label>
+          </div>
+          <div class="col2">
+            <textarea name="msg" rows="8" cols="36"></textarea>
+          </div>
+        </div>
+      </form>
+    </div>
+    <button type="submit" name="submit" >SEND</button>
+    <img src="images/SuitRocktemPFP.png" alt="Contact me!" id="side-img">
+
+    <img src="images/Bottom_Banner_Upper.png" class="banner" id="bottom-banner-img">
+    <div id="bottom-banner">
+      <span id="copyright">© 2019 by Rocktem Bhowmik</span>
+    </div>
+  </body>
+</html>

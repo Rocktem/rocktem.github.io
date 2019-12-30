@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rocktem's Personal Website</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Fira+Sans+Condensed&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+  </head>
+  <body onload="changeAccent()">
+    <div>
+      <img class="banner" src="images/Website_Header.png">
+      <ul class="navbar">
+        <li class="navbar"><a class="navbar" href="contact.html">Contact Me</a></li>
+        <li class="navbar"><a class="navbar" href="videos.html">Videos</a></li>
+        <li class="navbar"><a class="navbar" href="portfolio.html">Portfolio</a></li>
+        <li class="navbar"><a class="navbar" id="active" href="goals.html">My Goals</a></li>
+        <li class="navbar"><a class="navbar" href="index.html">Who am I</a></li>
+      </ul>
+      <img class="banner" src="images/Navbar_Under.png">
+    </div>
+
+    <div class="fade">
+      <h1>My Goals</h1>
+      <div id="underline"></div>
+
+      <button type="button" name="short-term" onclick="shortTerm()">Short Term</button>
+      <button type="button" name="long-term" onclick="longTerm()">Long Term</button>
+
+      <p id="intromsg">
+        You can read about my goals by just clicking the buttons above.
+        I'll likely be updating it constantly so if you'd like to keep up on
+        what I'm doing feel free to check back every now and then.
+      </p>
+
+        <!-- Short Term -->
+      <table id="shortTerm">
+        <tr>
+          <th>Objective</th>
+          <th>Completed?</th>
+        </tr>
+        <tr>
+          <td>Get into the CS Major</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Begin DM'ing in Dungeons & Dragons</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Become proficient in drawing</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Become proficient in music development</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Begin the process of learning Game Design and Development</td>
+          <td>No</td>
+        </tr>
+      </table>
+        <!-- Long Term -->
+      <table id="longTerm">
+        <tr>
+          <th>Objective</th>
+          <th>Completed?</th>
+        </tr>
+        <tr>
+          <td>Graduate with a Bachelors in Computer Science</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Develop and publish my first indie game</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Enter into the field of software development or game development</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Expand my sources of passive income</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Travel to and enjoy Japan</td>
+          <td>No</td>
+        </tr>
+      </table>
+    </div>
+
+    <img src="images/Bottom_Banner_Upper.png" class="banner" id="bottom-banner-img">
+    <div id="bottom-banner">
+      <span id="copyright">© 2019 by Rocktem Bhowmik</span>
+    </div>
+  </body>
+</html>

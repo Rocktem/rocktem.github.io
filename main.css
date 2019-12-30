@@ -1,0 +1,263 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+body.index{
+  background-image:url("images/RocktemPixelated.png");
+  background-repeat: no-repeat;
+  background-position: bottom 2em right 2em;
+  background-size: 20%;
+}
+
+ul.navbar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li.navbar{
+  float: right;
+}
+
+li a.navbar{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+li a:hover:not(#active) {
+  background-color: #111;
+}
+
+#active{
+  color: #333;
+  background-color: #ffd359;
+}
+
+.banner{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+h1{
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 4em;
+  color: #1c1c1c;
+  padding-left: 1em;
+}
+
+#underline{
+  margin: 0;
+  width: 75%;
+  padding-left: 4em;
+  border: 2px dashed #1c1c1c;
+}
+
+p{
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1em;
+  color: #1c1c1c;
+  padding: 0 33% 1em 4em;
+  line-height: 2em;
+}
+
+span{
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1em;
+  color: #1c1c1c;
+  line-height: 1em;
+}
+
+#bottom-banner{
+  height: 2em;
+  background-color: #ffd359;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.fade{
+  animation: fadeIn 1s;
+}
+
+#copyright{
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: #333;
+  float: right;
+  padding-right: 1em;
+}
+
+table{
+  font-family: 'Fira Sans Condensed', sans-serif;
+  width: 50%;
+  margin: 1em 0 1em 4em;
+}
+
+td, th{
+  border-radius: 2em;
+  text-align: left;
+  padding: 1em;
+}
+
+th{
+  background-color: #333;
+  color: white;
+}
+
+td{
+  color: #333;
+}
+
+tr:nth-child(even){
+  background-color: #f7f7f7;
+}
+
+tr:nth-child(odd){
+  background-color: #e3e3e3;
+}
+
+#intromsg{
+  display: block;
+}
+
+#shortTerm{
+  display: none;
+}
+
+#longTerm{
+  display: none;
+}
+
+button{
+  background-color: #333;
+  color: white;
+  border-radius: .5em;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  padding: 1em;
+  margin: 1em 0 1em 5em;
+}
+
+button:hover{
+  background-color: #5c5c5c;
+}
+
+.gallery img:hover{
+  opacity: 0.75;
+}
+
+.gallery img{
+  width: 100%;
+  height: auto;
+}
+
+.gallery video{
+  width: 100%;
+  height: auto;
+}
+
+.gallery iframe{
+  width: 100%;
+  height: auto;
+}
+
+.responsive{
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.responsive_audio{
+  padding: 1em 1em 1em 4em;
+  float: left;
+  width: 80%;
+}
+
+@media only screen and (max-width: 700px){
+  .responsive{
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .responsive{
+    width: 100%;
+  }
+}
+
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#personal-vids{
+  margin: 1em;
+  display: none;
+}
+
+#favorite-vids{
+  margin: 1em;
+  display: none;
+}
+
+#music{
+  margin: 1em;
+  display: none;
+}
+
+.formcontainer{
+  padding: 1em;
+  width: 50%;
+  margin: 1em;
+}
+
+.row{
+  padding: 2em;
+}
+
+.col1{
+  float: left;
+  width: 25%;
+}
+
+.col2{
+  float: left;
+  width: 75%;
+}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 1em;
+  border-radius: 1em;
+  resize: vertical;
+}
+
+label{
+  font-family: 'Fira Sans Condensed', sans-serif;
+  display: inline-block;
+}
+
+#side-img{
+  float: right;
+  margin: 1em;
+  width: 33%;
+}
